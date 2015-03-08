@@ -1,0 +1,9 @@
+#
+# fips-freetype-gl
+#
+---
+exports:
+    header-dirs:
+        - freetype-gl
+    modules :
+        freetype-gl: .

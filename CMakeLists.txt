@@ -1,0 +1,32 @@
+fips_begin_lib(freetype-gl)
+	include_directories(freetype-gl)
+	find_package(OpenGL REQUIRED)
+	fips_files(
+		freetype-gl/freetype-gl.h
+		freetype-gl/vec234.h
+		freetype-gl/opengl.h
+		freetype-gl/markup.h
+		freetype-gl/mat4.c
+		freetype-gl/mat4.h
+		freetype-gl/texture-atlas.c
+		freetype-gl/texture-atlas.h
+		freetype-gl/texture-font.c
+		freetype-gl/texture-font.h
+		freetype-gl/vertex-buffer.c
+		freetype-gl/vertex-buffer.h
+		freetype-gl/vertex-attribute.c
+		freetype-gl/vertex-attribute.h
+		freetype-gl/font-manager.c
+		freetype-gl/font-manager.h
+		freetype-gl/text-buffer.c
+		freetype-gl/text-buffer.h
+		freetype-gl/shader.c
+		freetype-gl/shader.h
+		freetype-gl/vector.c
+		freetype-gl/vector.h
+		freetype-gl/platform.c
+		freetype-gl/platform.h
+	)
+	include_directories(${OPENGL_INCLUDE_DIR})
+	fips_libs(${OPENGL_LIBRARIES})
+fips_end_lib()
