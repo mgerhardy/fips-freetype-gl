@@ -2,6 +2,10 @@
 # fips-freetype-gl
 #
 ---
+imports:
+    fips-freetype2:
+        git: https://github.com/mgerhardy/fips-freetype2.git
+
 exports:
     header-dirs:
         - freetype-gl
